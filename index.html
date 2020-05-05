@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GSheet demo</title>
+		<meta name="description" content="demo using GSheet API" />
+		<meta name="keywords" content="google, sheet, spreadsheets, api, console, github, Mr.vero" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
+			<div id="theSidebar" class="sidebar">
+				<button class="close-button fa fa-fw fa-close"></button>
+				
+				<h1><span>GSheet<span> Demo</h1>
+				
+				<div class="related">
+					<h3>How to setup (click the link below)</h3>
+					<a target="_blank" href="https://docs.google.com/spreadsheets/u/0/">Create your google sheet here</a>
+					<a target="_blank" href="https://console.developers.google.com">Create your API Key here</a>
+					<a target="_blank" href="https://developers.google.com/sheets/api/">More about Spreadsheet API</a>
+				</div>
+			</div>
+			<div id="theGrid" class="main">
+				<section class="grid" >
+					<header class="top-bar">
+						<h2 class="top-bar__headline">Latest articles</h2>
+						<div class="filter">
+							<span>Filter by:</span>
+							<span class="dropdown">Popular</span>
+						</div>
+					</header>			
+					
+					<!-- <footer class="page-meta">
+						<span>Load more...</span>
+					</footer> -->
+				</section>
+				<section class="content">
+					<div class="scroll-wrap" >
+						
+					</div>
+					<button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
+				</section>
+			</div>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
