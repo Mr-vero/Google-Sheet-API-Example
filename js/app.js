@@ -32,12 +32,18 @@
  */
  const SHEET_ID = '1SwGVh6UdkN3C54Oid2t2aRDKrZT7ken2joC4LYQc-VU'; // replace with your own sheet id
 
+ /*
+ 	The sheet tab is tab that store your sheet data. 
+ 	On newly Untitled spreadsheet it name Sheet1.
+ */
+ const SHEET_TAB = 'Articles'; // replace with your own sheet tab
+
  var article_content = document.querySelector('.scroll-wrap');
  var article_grid = document.querySelector('.grid');
 
  const getArticles = () =>{
  	//read the data from gsheet
- 	fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Articles?key=${KEY}`, {
+ 	fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${SHEET_TAB}?key=${KEY}`, {
     	method: "GET", 
     	cache : 'no-cache'
     })
